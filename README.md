@@ -1,10 +1,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Shivu-2000/MCA-5SEM-cloud-lab-project">
-    ![logo](https://github.com/nansari-0134/MCA-5SEM-cloud-lab-project/assets/85431837/15bf9799-8db4-449d-963d-cbdccb57bda8)
-  </a>
-
+	
+![logo](https://github.com/nansari-0134/MCA-5SEM-cloud-lab-project/assets/85431837/4b1975d8-07e0-459c-884c-c0d8317702c0)
   <h3 align="center">Quiz App in C</h3>
 
   <p align="center">
@@ -35,6 +33,10 @@ The module used in the code are:
 In this quiz we store the player name, view highest score and even can reset it or update it. </br>
 
 The quiz is divided into 2 round in first round player is supposed to give 3 correct answer to be eligible to enter the 2 round where for each round he/she will be rewarded 100000.000 rupee. If the user doesn’t pass the 1 round he/she is not permitted to enter the 2 round. </br>
+
+
+![image](https://github.com/nansari-0134/MCA-5SEM-cloud-lab-project/assets/85431837/7ed6901a-ac19-41d6-9d49-6dfa3a7a40c6)
+
 
 The game closures when the client's monetary reward stacks up to $1 million. For each inquiry posed, there are 4 choices, specifically A, B, C and D. There are no regrettable markings, so the client's amassed greenbacks will not be deducted for wrong responses to the inquiries.</br>
 
