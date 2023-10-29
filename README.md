@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Shivu-2000/MCA-5SEM-cloud-lab-project">
-    <img src="images/logo.jpg" alt="Logo" width="80" height="80">
+    <img src="logo.jpg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Quiz App in C</h3>
@@ -60,56 +60,49 @@ Welcome to the "Quiz Game using C" project repository! This guide will help you 
 
 Before you begin, make sure you have the following software and tools installed on your system:
 
-<ol>
-<li> C Compiler : You'll need a C compiler to build and run the project. GCC (GNU Compiler Collection) is a popular choice, and you can install it on various platforms.
 
-	<ul>
-	<li>Linux: You can install GCC on most Linux distributions using your package manager. For example, on Ubuntu, you can run:
-  ```sh
-  	sudo apt-get update
-	sudo apt-get install gcc
-  ```
-	</li>
-	<li> Windows: You can use MinGW (Minimalist GNU for Windows) to install GCC on Windows. <a href="http://www.mingw.org/">Download MinGW </a>, and follow the installation instructions.
-	</li>
-	<li> macOS: For macOS users, you can use Xcode Command Line Tools, which include the GCC compiler. Install it by running:
-  ```sh
-  	xcode-select --install
-  ```
-	</li>
-	</ul>
-	</li>
-	</ol>
+1. C Compiler : You'll need a C compiler to build and run the project. GCC (GNU Compiler Collection) is a popular choice, and you can install it on various platforms.
+
+   - Linux: You can install GCC on most Linux distributions using your package manager. For example, on Ubuntu, you can run:
+	  ```sh
+		sudo apt-get update
+		sudo apt-get install gcc
+	  ```
+   - Windows: You can use MinGW (Minimalist GNU for Windows) to install GCC on Windows. <a href="http://www.mingw.org/">Download MinGW </a>, and follow the installation instructions.
+	
+   - macOS: For macOS users, you can use Xcode Command Line Tools, which include the GCC compiler. Install it by running:
+	  ```sh
+		xcode-select --install
+	  ```
+
 
 ### Clone the Repository
 To get started, you need to clone this repository to your local machine. Open your terminal or command prompt and run the following command:
 
-  ```bash
+  ```sh
   	git clone https://github.com/Shivu-2000/MCA-5SEM-cloud-lab-project.git
   ```
 
 ### Build and Run the Quiz Game
 
-<ol>
+1. Navigate to the project directory:
 
-	<li> 	Navigate to the project directory:
-  ```bash
-  	cd MCA-5SEM-cloud-lab-project
-  ```
-  </li>
-	<li>
-	Compile the source code using the C compiler:
-  ```bash
-  	gcc cquizgame.c -o cquizgame
-  ```
-  </li>
-	<li>
-	Run the compiled program:
 	  ```bash
-  	cquizgame
-  ```
-	</li>
-</ol>
+   		cd MCA-5SEM-cloud-lab-project
+	  ```
+
+2. Compile the source code using the C compiler:
+
+	  ```bash
+	  	gcc cquizgame.c -o cquizgame
+	  ```
+
+3. Run the compiled program:
+
+	  ```bash
+	  	cquizgame
+	  ```
+
 
 <!-- USAGE EXAMPLES -->
 ## Usage
