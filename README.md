@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Shivu-2000/MCA-5SEM-cloud-lab-project">
-    <img src="logo.jpg" alt="Logo" width="80" height="80">
+    <img src="![logo](https://github.com/nansari-0134/MCA-5SEM-cloud-lab-project/assets/85431837/15bf9799-8db4-449d-963d-cbdccb57bda8)" alt="Logo" width="80"  />
   </a>
 
   <h3 align="center">Quiz App in C</h3>
