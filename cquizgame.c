@@ -4,12 +4,17 @@
 #include<ctype.h>
 #include<stdlib.h>
 #include<string.h>
+
+// Function Declarations
+
 void show_record();
 void reset_score();
 void help();
 void edit_score(float , char []);
 int main()
      {
+  // Variable Declarations
+	     
      int countr,r,r1,count,i,n;
      float score;
      char choice;
@@ -26,6 +31,9 @@ int main()
      printf("\n\t\t________________________________________");
      printf("\n\t\t   BECOME A MILLIONAIRE!!!!!!!!!!!    ") ;
      printf("\n\t\t________________________________________");
+
+       // Display game instructions
+        // ...
      printf("\n\t\t________________________________________");
      printf("\n\t\t > Press S to start the game");
      printf("\n\t\t > Press V to view the highest score  ");
@@ -33,7 +41,13 @@ int main()
      printf("\n\t\t > press H for help            ");
      printf("\n\t\t > press Q to quit             ");
      printf("\n\t\t________________________________________\n\n");
-     choice=toupper(getch());
+
+
+	
+
+        // Get user's choice to start the game
+	     
+     choice=toupper(getch());  
      if (choice=='V')
 	{
 	show_record();
@@ -88,13 +102,16 @@ int main()
      home:
      system("cls");
      count=0;
+
+ // Game logic
+	    
      for(i=1;i<=3;i++)
      {
     system("cls");
      r1=i;
 
 
-     switch(r1)
+     switch(r1)  //first question asked 
 		{
 		case 1:
 		printf("\n\nWhich of the following is a Palindrome number?");
@@ -194,10 +211,14 @@ game:
      {system("cls");
      r=i;
 
-     switch(r)
+      // Switch statement for presenting questions and validating answers
+     switch(r)   //second question asked 
 		{
 		case 1:
 		printf("\n\nWhat is the National Game of England?");
+			// Present the question with options
+        // Check if the answer is correct and update the score accordingly
+        // Provide feedback for both correct and incorrect answer
 		printf("\n\nA.Football\t\tB.Basketball\n\nC.Cricket\t\tD.Baseball");
 		if (toupper(getch())=='C')
 			{printf("\n\nCorrect!!!");countr++;getch();
@@ -207,6 +228,9 @@ game:
 		       goto score;
 		       break;}
 
+
+ // Further cases for more questions
+			
 		case 2:
 		printf("\n\n\nStudy of Earthquake is called............,");
 		printf("\n\nA.Seismology\t\tB.Cosmology\n\nC.Orology\t\tD.Etimology");
@@ -431,6 +455,8 @@ game:
 		       {printf("\n\nWrong!!! The correct answer is D.Serena Williams");getch();goto score;
 		       break;}
 
+            // Final question and validation logic
+			
 		case 23:
 		printf("\n\n\nWhich film was awarded the Best Motion Picture at Oscar in 2010?");
 		printf("\n\nA.The Secret in their Eyes\t\tB.Shutter Island\n\nC.The King's Speech\t\tD.The Reader");
@@ -440,8 +466,15 @@ game:
 		else
 		       {printf("\n\nWrong!!! The correct answer is C.The King's Speech");getch();goto score;
 		       break;}}}
-	score:
+	    
+	// Determine the final score and display the result
+	    score:
     system("cls");
+
+	     // Check the score and provide appropriate messages for different ranges
+    // Display the final amount won or a message indicating no cash won
+    // Provide an option to play the next game or return to the main menu
+    // Check for user input and proceed accordingly
 	score=(float)countr*100000;
 	if(score>0.00 && score<1000000)
 	{
@@ -464,8 +497,13 @@ game:
 	go:
 	puts("\n\n Press Y if you want to play next game");
 	puts(" Press any key if you want to go main menu");
+
+	    // Return to the beginning of the game loop
+	    
 	if (toupper(getch())=='Y')
 		goto home;
+
+		// Update the score if needed and return to the main menu
 	else
 		{
 		edit_score(score,playername);
@@ -484,17 +522,19 @@ void show_record()
 	fclose(f);
 	getch();}
 
+// Function to reset the score
 void reset_score()
     {system("cls");
     float sc;
 	char nm[20];
 	FILE *f;
 	f=fopen("score.txt","r+");
-	fscanf(f,"%s%f",&nm,&sc);
+	fscanf(f,"%s%f",&nm,&sc);  // Read the name and score from the file
 	sc=0;
-	fprintf(f,"%s,%.2f",nm,sc);
+	fprintf(f,"%s,%.2f",nm,sc); // Write the reset score back to the file
     fclose(f);}
 
+// Function to display the help section
 void help()
 	{system("cls");
     printf("\n\n                              HELP");
@@ -515,16 +555,17 @@ void help()
 	printf("\n\n\t*********************BEST OF LUCK*********************************");
 	printf("\n\n\t*****C PROGRAM QUIZ GAME is developed by CODE WITH C TEAM********");}
 
+// Function to edit the score
 void edit_score(float score, char plnm[20])
 	{system("cls");
 	float sc;
 	char nm[20];
 	FILE *f;
 	f=fopen("score.txt","r");
-	fscanf(f,"%s%f",&nm,&sc);
+	fscanf(f,"%s%f",&nm,&sc);   // Read the name and score from the file
 	if (score>=sc)
-	  { sc=score;
+	  { sc=score;  // Update the score if the current score is higher
 	    fclose(f);
 	    f=fopen("score.txt","w");
-	    fprintf(f,"%s\n%.2f",plnm,sc);
+	    fprintf(f,"%s\n%.2f",plnm,sc);  // Write the updated score back to the file
 	    fclose(f);}}
