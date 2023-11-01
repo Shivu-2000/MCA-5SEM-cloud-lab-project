@@ -88,7 +88,7 @@ int main()
      home:
      system("cls");
      count=0;
-     for(i=1;i<=3;i++)
+     for(i=1;i<=10;i++)
      {
     system("cls");
      r1=i;
@@ -172,7 +172,54 @@ int main()
 		       getch();
 		       break;}}
 		       }
-
+	 case 7:
+		printf("\n\n\nWhat is the full form of GIT??");
+		printf("\n\nA.Gastro Intestional Track.\t\tB.Gastro International Track.\n\nC.Global information Tracker\t\tD.None of these");
+		if (toupper(getch())=='C' )
+			{printf("\n\nCorrect!!!");count++;
+			getch();
+			break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is C.Global information Tracker");
+		       getch();
+		       break;}}
+		       }
+	 case 8:
+		printf("\n\n\nWhich of the following is NOT an anti-virus software ?");
+		printf("\n\nA.Avast.\t\tB.Linux\n\nC.Norton \t\tD.Kaspersky ");
+		if (toupper(getch())=='B' )
+			{printf("\n\nCorrect!!!");count++;
+			getch();
+			break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is B.Linux");
+		       getch();
+		       break;}}
+		       }
+	 case 9:
+		printf("\n\n\nWhich unit of the computer is considered as the brain of the computer ?");
+		printf("\n\nA.Memory unit\t\tB. Input unit\t\tC.CPU\t\tD.Output unit");
+		if (toupper(getch())=='C' )
+			{printf("\n\nCorrect!!!");count++;
+			getch();
+			break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is C.CPU");
+		       getch();
+		       break;}}
+		       }
+	 case 10:
+		printf("\n\n\nIn the context of computing, a byte is equal to _____ bits ?");
+		printf("\n\nA.2.\t\tB.4\n\nC.8 \t\tD.16");
+		if (toupper(getch())=='B' )
+			{printf("\n\nCorrect!!!");count++;
+			getch();
+			break;}
+		else
+		       {printf("\n\nWrong!!! The correct answer is B.8");
+		       getch();
+		       break;}}
+		       }
 	if(count>=2)
 	{goto test;}
 	else
